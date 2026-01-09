@@ -1,0 +1,47 @@
+{
+  "name": "@standardbeagle/figma-query",
+  "version": "0.1.0",
+  "description": "Token-efficient Figma MCP server with image export, query DSL, and design token support",
+  "main": "index.js",
+  "bin": {
+    "figma-query": "bin/figma-query"
+  },
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/standardbeagle/figma-query.git"
+  },
+  "keywords": [
+    "figma",
+    "mcp",
+    "model-context-protocol",
+    "design-tokens",
+    "css",
+    "design-system"
+  ],
+  "author": "StandardBeagle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/standardbeagle/figma-query/issues"
+  },
+  "homepage": "https://github.com/standardbeagle/figma-query#readme",
+  "files": [
+    "bin/",
+    "scripts/",
+    "index.js"
+  ],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "engines": {
+    "node": ">=16"
+  }
+}

@@ -6,6 +6,13 @@
 *.so
 *.dylib
 
+# npm bin directory binaries (keep .gitkeep)
+/bin/figma-query*
+!/bin/.gitkeep
+
+# Node modules
+node_modules/
+
 # Test binary
 *.test
 
