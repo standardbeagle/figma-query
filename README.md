@@ -4,6 +4,8 @@ Token-efficient Figma MCP server with image export, query DSL, and design token 
 
 ## Installation
 
+### npm
+
 ```bash
 npm install -g @standardbeagle/figma-query
 ```
@@ -12,6 +14,19 @@ Or use with npx:
 
 ```bash
 npx @standardbeagle/figma-query
+```
+
+### Python (uvx/pipx)
+
+```bash
+# Using uvx (recommended)
+uvx figma-query
+
+# Using pipx
+pipx install figma-query
+
+# Using pip
+pip install figma-query
 ```
 
 ## Configuration
@@ -46,6 +61,22 @@ Or if installed globally:
   "mcpServers": {
     "figma-query": {
       "command": "figma-query",
+      "env": {
+        "FIGMA_ACCESS_TOKEN": "your-token-here"
+      }
+    }
+  }
+}
+```
+
+Using uvx (Python):
+
+```json
+{
+  "mcpServers": {
+    "figma-query": {
+      "command": "uvx",
+      "args": ["figma-query"],
       "env": {
         "FIGMA_ACCESS_TOKEN": "your-token-here"
       }
